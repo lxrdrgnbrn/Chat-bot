@@ -1,0 +1,25 @@
+﻿<Window x:Class="ChatBot.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatBot"
+        mc:Ignorable="d"
+        Title="Помощь" Height="542.63" Width="472.282" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="#FF262626" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="35
+                " VerticalAlignment="Top" Width="472" Background="#FF383737">
+            <Button x:Name="Close" Width="30" Height="30" Background="#FFFF4D3B" BorderBrush="#FFFF4D3B" Click="Close_Click" BorderThickness="0" Padding="0"   Grid.IsSharedSizeScope="True" UseLayoutRounding="False" Canvas.Left="437" Canvas.Top="2.5" HorizontalAlignment="Center">
+                <Button.ContentTemplate>
+                    <DataTemplate >
+                        <Image   Source="Image\close.png" Stretch="Uniform" Width="20" Height="20" />
+                    </DataTemplate>
+                </Button.ContentTemplate>
+            </Button>
+            <Label x:Name="Header" Content="Чат бот Боб - Список команд" HorizontalAlignment="Center" Grid.RowSpan="2" VerticalAlignment="Center" Grid.ColumnSpan="7" Width="402.208" Height="35" Foreground="#DDFFFFFF" VerticalContentAlignment="Center" Margin="0" Padding="10,4,2,4" UseLayoutRounding="False" Canvas.Left="35"/>
+            <Image Source="Icon.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="35"/>
+        </Canvas>
+        <TextBlock Margin="0,35,0,0" TextWrapping="Wrap" Height="503" Width="472" Padding="10" FontFamily="Roboto" FontSize="14"><Run Foreground="#FFFFEB3B" Text="Привет"/><Run Foreground="White" Text=" - "/><Run Foreground="White" Text="бот поздаровается с вами"/><LineBreak/><Run Foreground="White"/><LineBreak/><Run Foreground="#FFFFEB3B" Text="Дата"/><Run Foreground="White" Text=" - бот выведет актуальную дату"/><LineBreak/><Run Foreground="White"/><LineBreak/><Run Foreground="#FFFFEB3B" Text="Факт "/><Run Foreground="White" Text="- бот расскажет случайный факт"/><LineBreak/><Run Foreground="White"/><LineBreak/><Run Foreground="#FFFFEB3B" Text="Погода"/><Run Foreground="White" Text=" - бот откроет страницу с прогнозом погоды"/><LineBreak/><Run Foreground="White"/><LineBreak/><Run Foreground="#FFFFEB3B" Text="Валюта "/><Run Foreground="White" Text="- бот откроет страницу с курсом валют"/><LineBreak/><Run Foreground="White"/><LineBreak/><Run Foreground="#FFFFEB3B" Text="Открой браузер "/><Run Foreground="White" Text="- Бот откроет браузер "/><LineBreak/><Run Foreground="White"/><LineBreak/><Run Foreground="#FFFFEB3B" Text="Умножить число 1 на число 2 "/><Run Foreground="White" Text="- бот выведет результат умножения числа 1 на число 2"/><LineBreak/><Run Foreground="White"/><LineBreak/><Run Foreground="#FFFFEB3B" Text="Прибавать число 1 к число 2"/><Run Foreground="White" Text=" - бот выведет результат суммы числа 1 и числа 2"/><LineBreak/><Run Foreground="White"/><LineBreak/><Run Foreground="#FFFFEB3B" Text="Вычти число 1 из числа 2 "/><Run Foreground="White" Text="- бот выведет результат разности числа 2 и числа 1"/><LineBreak/><Run Foreground="White"/><LineBreak/><Run Foreground="#FFFFEB3B" Text="Раздели число 1 на число 2 "/><Run Foreground="White" Text="- бот выведет результат деления числа 1 на число 2"/><LineBreak/><Run Foreground="White"/><LineBreak/><LineBreak/><LineBreak/><Run Foreground="White"/><LineBreak/><LineBreak/></TextBlock>
+
+    </Grid>
+</Window>
